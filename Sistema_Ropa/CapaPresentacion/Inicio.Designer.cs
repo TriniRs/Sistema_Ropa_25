@@ -35,16 +35,6 @@
             this.labelTitulo = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
             this.menu = new System.Windows.Forms.MenuStrip();
-            this.menuSeguridad = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuPermisos = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuPermisosSimples = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuGruposPermisos = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuPermisosUsuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAuditorias = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAuditoriaSesiones = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAuditoriaCompras = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAuditoriaVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPedidosVentas = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,6 +46,16 @@
             this.menuReportes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuReportesCompras = new System.Windows.Forms.ToolStripMenuItem();
             this.menuReportesVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuSeguridad = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPermisos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPermisosSimples = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGruposPermisos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPermisosUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAuditorias = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAuditoriaSesiones = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAuditoriaCompras = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAuditoriaVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConfiguracion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDatosNegocio = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
@@ -110,11 +110,11 @@
             // 
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.labelTitulo.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitulo.Font = new System.Drawing.Font("Bad Script", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.labelTitulo.Location = new System.Drawing.Point(15, 15);
+            this.labelTitulo.Location = new System.Drawing.Point(12, 6);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(163, 33);
+            this.labelTitulo.Size = new System.Drawing.Size(204, 53);
             this.labelTitulo.TabIndex = 88;
             this.labelTitulo.Text = "Sistema de Ropa";
             this.labelTitulo.Click += new System.EventHandler(this.labelTitulo_Click);
@@ -142,90 +142,6 @@
             this.menu.Size = new System.Drawing.Size(1370, 34);
             this.menu.TabIndex = 86;
             this.menu.Text = "menuStrip1";
-            // 
-            // menuSeguridad
-            // 
-            this.menuSeguridad.AutoSize = false;
-            this.menuSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.menuSeguridad.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuUsuarios,
-            this.menuPermisos,
-            this.menuAuditorias});
-            this.menuSeguridad.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuSeguridad.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.menuSeguridad.Name = "menuSeguridad";
-            this.menuSeguridad.Size = new System.Drawing.Size(87, 30);
-            this.menuSeguridad.Text = "Seguridad";
-            this.menuSeguridad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuUsuarios
-            // 
-            this.menuUsuarios.Name = "menuUsuarios";
-            this.menuUsuarios.Size = new System.Drawing.Size(138, 28);
-            this.menuUsuarios.Text = "Usuarios";
-            this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
-            // 
-            // menuPermisos
-            // 
-            this.menuPermisos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuPermisosSimples,
-            this.menuGruposPermisos,
-            this.menuPermisosUsuarios});
-            this.menuPermisos.Name = "menuPermisos";
-            this.menuPermisos.Size = new System.Drawing.Size(138, 28);
-            this.menuPermisos.Text = "Permisos";
-            // 
-            // menuPermisosSimples
-            // 
-            this.menuPermisosSimples.Name = "menuPermisosSimples";
-            this.menuPermisosSimples.Size = new System.Drawing.Size(215, 28);
-            this.menuPermisosSimples.Text = "Permisos simples";
-            this.menuPermisosSimples.Click += new System.EventHandler(this.menuPermisosSimples_Click);
-            // 
-            // menuGruposPermisos
-            // 
-            this.menuGruposPermisos.Name = "menuGruposPermisos";
-            this.menuGruposPermisos.Size = new System.Drawing.Size(215, 28);
-            this.menuGruposPermisos.Text = "Grupos de permisos";
-            this.menuGruposPermisos.Click += new System.EventHandler(this.menuGrupos_Click);
-            // 
-            // menuPermisosUsuarios
-            // 
-            this.menuPermisosUsuarios.Name = "menuPermisosUsuarios";
-            this.menuPermisosUsuarios.Size = new System.Drawing.Size(215, 28);
-            this.menuPermisosUsuarios.Text = "Permisos de usuarios";
-            this.menuPermisosUsuarios.Click += new System.EventHandler(this.menuPermisosUsuarios_Click);
-            // 
-            // menuAuditorias
-            // 
-            this.menuAuditorias.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuAuditoriaSesiones,
-            this.menuAuditoriaCompras,
-            this.menuAuditoriaVentas});
-            this.menuAuditorias.Name = "menuAuditorias";
-            this.menuAuditorias.Size = new System.Drawing.Size(138, 28);
-            this.menuAuditorias.Text = "Auditoría";
-            // 
-            // menuAuditoriaSesiones
-            // 
-            this.menuAuditoriaSesiones.Name = "menuAuditoriaSesiones";
-            this.menuAuditoriaSesiones.Size = new System.Drawing.Size(197, 28);
-            this.menuAuditoriaSesiones.Text = "Auditoría sesiones";
-            this.menuAuditoriaSesiones.Click += new System.EventHandler(this.auditoriaSesionesToolStripMenuItem_Click);
-            // 
-            // menuAuditoriaCompras
-            // 
-            this.menuAuditoriaCompras.Name = "menuAuditoriaCompras";
-            this.menuAuditoriaCompras.Size = new System.Drawing.Size(197, 28);
-            this.menuAuditoriaCompras.Text = "Auditoría compras";
-            this.menuAuditoriaCompras.Click += new System.EventHandler(this.menuAuditoriaCompras_Click);
-            // 
-            // menuAuditoriaVentas
-            // 
-            this.menuAuditoriaVentas.Name = "menuAuditoriaVentas";
-            this.menuAuditoriaVentas.Size = new System.Drawing.Size(197, 28);
-            this.menuAuditoriaVentas.Text = "Auditoría ventas";
-            this.menuAuditoriaVentas.Click += new System.EventHandler(this.auditoriaVentasToolStripMenuItem_Click);
             // 
             // menuVentas
             // 
@@ -323,6 +239,90 @@
             this.menuReportesVentas.Size = new System.Drawing.Size(214, 28);
             this.menuReportesVentas.Text = "Reportes de ventas";
             this.menuReportesVentas.Click += new System.EventHandler(this.menuReportesVentas_Click);
+            // 
+            // menuSeguridad
+            // 
+            this.menuSeguridad.AutoSize = false;
+            this.menuSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.menuSeguridad.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuUsuarios,
+            this.menuPermisos,
+            this.menuAuditorias});
+            this.menuSeguridad.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuSeguridad.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.menuSeguridad.Name = "menuSeguridad";
+            this.menuSeguridad.Size = new System.Drawing.Size(87, 30);
+            this.menuSeguridad.Text = "Seguridad";
+            this.menuSeguridad.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menuUsuarios
+            // 
+            this.menuUsuarios.Name = "menuUsuarios";
+            this.menuUsuarios.Size = new System.Drawing.Size(138, 28);
+            this.menuUsuarios.Text = "Usuarios";
+            this.menuUsuarios.Click += new System.EventHandler(this.menuUsuarios_Click);
+            // 
+            // menuPermisos
+            // 
+            this.menuPermisos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuPermisosSimples,
+            this.menuGruposPermisos,
+            this.menuPermisosUsuarios});
+            this.menuPermisos.Name = "menuPermisos";
+            this.menuPermisos.Size = new System.Drawing.Size(138, 28);
+            this.menuPermisos.Text = "Permisos";
+            // 
+            // menuPermisosSimples
+            // 
+            this.menuPermisosSimples.Name = "menuPermisosSimples";
+            this.menuPermisosSimples.Size = new System.Drawing.Size(215, 28);
+            this.menuPermisosSimples.Text = "Permisos simples";
+            this.menuPermisosSimples.Click += new System.EventHandler(this.menuPermisosSimples_Click);
+            // 
+            // menuGruposPermisos
+            // 
+            this.menuGruposPermisos.Name = "menuGruposPermisos";
+            this.menuGruposPermisos.Size = new System.Drawing.Size(215, 28);
+            this.menuGruposPermisos.Text = "Grupos de permisos";
+            this.menuGruposPermisos.Click += new System.EventHandler(this.menuGrupos_Click);
+            // 
+            // menuPermisosUsuarios
+            // 
+            this.menuPermisosUsuarios.Name = "menuPermisosUsuarios";
+            this.menuPermisosUsuarios.Size = new System.Drawing.Size(215, 28);
+            this.menuPermisosUsuarios.Text = "Permisos de usuarios";
+            this.menuPermisosUsuarios.Click += new System.EventHandler(this.menuPermisosUsuarios_Click);
+            // 
+            // menuAuditorias
+            // 
+            this.menuAuditorias.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuAuditoriaSesiones,
+            this.menuAuditoriaCompras,
+            this.menuAuditoriaVentas});
+            this.menuAuditorias.Name = "menuAuditorias";
+            this.menuAuditorias.Size = new System.Drawing.Size(138, 28);
+            this.menuAuditorias.Text = "Auditoría";
+            // 
+            // menuAuditoriaSesiones
+            // 
+            this.menuAuditoriaSesiones.Name = "menuAuditoriaSesiones";
+            this.menuAuditoriaSesiones.Size = new System.Drawing.Size(197, 28);
+            this.menuAuditoriaSesiones.Text = "Auditoría sesiones";
+            this.menuAuditoriaSesiones.Click += new System.EventHandler(this.auditoriaSesionesToolStripMenuItem_Click);
+            // 
+            // menuAuditoriaCompras
+            // 
+            this.menuAuditoriaCompras.Name = "menuAuditoriaCompras";
+            this.menuAuditoriaCompras.Size = new System.Drawing.Size(197, 28);
+            this.menuAuditoriaCompras.Text = "Auditoría compras";
+            this.menuAuditoriaCompras.Click += new System.EventHandler(this.menuAuditoriaCompras_Click);
+            // 
+            // menuAuditoriaVentas
+            // 
+            this.menuAuditoriaVentas.Name = "menuAuditoriaVentas";
+            this.menuAuditoriaVentas.Size = new System.Drawing.Size(197, 28);
+            this.menuAuditoriaVentas.Text = "Auditoría ventas";
+            this.menuAuditoriaVentas.Click += new System.EventHandler(this.auditoriaVentasToolStripMenuItem_Click);
             // 
             // menuConfiguracion
             // 

@@ -64,13 +64,13 @@
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.menu.BackColor = System.Drawing.Color.White;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuVerDetalleUsuario,
             this.menuAgregarUsuario,
             this.menuEditarUsuario,
-            this.menuRestablecerClave,
-            this.menuEliminarUsuario});
+            this.menuEliminarUsuario,
+            this.menuVerDetalleUsuario,
+            this.menuRestablecerClave});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(1370, 34);
@@ -80,9 +80,9 @@
             // menuVerDetalleUsuario
             // 
             this.menuVerDetalleUsuario.AutoSize = false;
-            this.menuVerDetalleUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.menuVerDetalleUsuario.BackColor = System.Drawing.Color.White;
             this.menuVerDetalleUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuVerDetalleUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.menuVerDetalleUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.menuVerDetalleUsuario.Name = "menuVerDetalleUsuario";
             this.menuVerDetalleUsuario.Size = new System.Drawing.Size(88, 30);
             this.menuVerDetalleUsuario.Text = "Ver detalle";
@@ -92,9 +92,9 @@
             // menuAgregarUsuario
             // 
             this.menuAgregarUsuario.AutoSize = false;
-            this.menuAgregarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.menuAgregarUsuario.BackColor = System.Drawing.Color.White;
             this.menuAgregarUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuAgregarUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.menuAgregarUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.menuAgregarUsuario.Name = "menuAgregarUsuario";
             this.menuAgregarUsuario.Size = new System.Drawing.Size(73, 30);
             this.menuAgregarUsuario.Text = "Agregar";
@@ -104,9 +104,9 @@
             // menuEditarUsuario
             // 
             this.menuEditarUsuario.AutoSize = false;
-            this.menuEditarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.menuEditarUsuario.BackColor = System.Drawing.Color.White;
             this.menuEditarUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuEditarUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.menuEditarUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.menuEditarUsuario.Name = "menuEditarUsuario";
             this.menuEditarUsuario.Size = new System.Drawing.Size(60, 30);
             this.menuEditarUsuario.Text = "Editar";
@@ -116,9 +116,9 @@
             // menuRestablecerClave
             // 
             this.menuRestablecerClave.AutoSize = false;
-            this.menuRestablecerClave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.menuRestablecerClave.BackColor = System.Drawing.Color.White;
             this.menuRestablecerClave.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuRestablecerClave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.menuRestablecerClave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.menuRestablecerClave.Name = "menuRestablecerClave";
             this.menuRestablecerClave.Size = new System.Drawing.Size(134, 30);
             this.menuRestablecerClave.Text = "Restablecer clave";
@@ -128,9 +128,9 @@
             // menuEliminarUsuario
             // 
             this.menuEliminarUsuario.AutoSize = false;
-            this.menuEliminarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.menuEliminarUsuario.BackColor = System.Drawing.Color.White;
             this.menuEliminarUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuEliminarUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.menuEliminarUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.menuEliminarUsuario.Name = "menuEliminarUsuario";
             this.menuEliminarUsuario.Size = new System.Drawing.Size(75, 30);
             this.menuEliminarUsuario.Text = "Eliminar";
@@ -141,7 +141,7 @@
             // 
             this.panelLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelLista.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelLista.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelLista.Controls.Add(this.buttonActualizar);
             this.panelLista.Controls.Add(this.labelSubTitulo);
             this.panelLista.Controls.Add(this.comboBoxBusqueda);
@@ -178,8 +178,9 @@
             this.labelSubTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelSubTitulo.AutoSize = true;
-            this.labelSubTitulo.BackColor = System.Drawing.SystemColors.Window;
-            this.labelSubTitulo.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSubTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.labelSubTitulo.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F);
+            this.labelSubTitulo.ForeColor = System.Drawing.Color.White;
             this.labelSubTitulo.Location = new System.Drawing.Point(10, 20);
             this.labelSubTitulo.Name = "labelSubTitulo";
             this.labelSubTitulo.Size = new System.Drawing.Size(197, 39);

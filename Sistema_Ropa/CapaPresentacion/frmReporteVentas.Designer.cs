@@ -43,6 +43,7 @@
             this.panelReporteCompras = new System.Windows.Forms.Panel();
             this.labelBuscarPor = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonLimpiar3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxColumna = new System.Windows.Forms.ComboBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.textBoxBusqueda = new System.Windows.Forms.TextBox();
             this.buttonDescarcarExcel = new System.Windows.Forms.Button();
             this.dataGridViewData = new System.Windows.Forms.DataGridView();
-            this.buttonGrafico = new System.Windows.Forms.Button();
             this.FechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumeroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,7 +71,7 @@
             this.montoDescuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MontoTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonLimpiar3 = new System.Windows.Forms.Button();
+            this.buttonGrafico = new System.Windows.Forms.Button();
             this.panelReporteCompras.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
@@ -87,7 +87,7 @@
             this.buttonLimpiarClientes.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLimpiarClientes.ForeColor = System.Drawing.SystemColors.Window;
             this.buttonLimpiarClientes.Image = global::CapaPresentacion.Properties.Resources.Escoba;
-            this.buttonLimpiarClientes.Location = new System.Drawing.Point(1382, 30);
+            this.buttonLimpiarClientes.Location = new System.Drawing.Point(1268, 30);
             this.buttonLimpiarClientes.Name = "buttonLimpiarClientes";
             this.buttonLimpiarClientes.Size = new System.Drawing.Size(75, 30);
             this.buttonLimpiarClientes.TabIndex = 5;
@@ -103,7 +103,7 @@
             this.comboBoxCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCliente.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(1095, 32);
+            this.comboBoxCliente.Location = new System.Drawing.Point(981, 32);
             this.comboBoxCliente.Name = "comboBoxCliente";
             this.comboBoxCliente.Size = new System.Drawing.Size(200, 27);
             this.comboBoxCliente.TabIndex = 3;
@@ -115,6 +115,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitulo.ForeColor = System.Drawing.Color.White;
             this.labelTitulo.Location = new System.Drawing.Point(10, 20);
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(208, 39);
@@ -126,10 +127,10 @@
             this.labelCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelCliente.AutoSize = true;
-            this.labelCliente.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelCliente.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.labelCliente.Location = new System.Drawing.Point(1040, 36);
+            this.labelCliente.ForeColor = System.Drawing.Color.White;
+            this.labelCliente.Location = new System.Drawing.Point(926, 36);
             this.labelCliente.Name = "labelCliente";
             this.labelCliente.Size = new System.Drawing.Size(49, 19);
             this.labelCliente.TabIndex = 85;
@@ -142,7 +143,7 @@
             this.dateTimePickerFechaFin.CustomFormat = "";
             this.dateTimePickerFechaFin.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerFechaFin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerFechaFin.Location = new System.Drawing.Point(919, 33);
+            this.dateTimePickerFechaFin.Location = new System.Drawing.Point(805, 33);
             this.dateTimePickerFechaFin.Name = "dateTimePickerFechaFin";
             this.dateTimePickerFechaFin.Size = new System.Drawing.Size(100, 27);
             this.dateTimePickerFechaFin.TabIndex = 2;
@@ -153,10 +154,10 @@
             this.labelFechaFin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFechaFin.AutoSize = true;
-            this.labelFechaFin.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelFechaFin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelFechaFin.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFechaFin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.labelFechaFin.Location = new System.Drawing.Point(835, 36);
+            this.labelFechaFin.ForeColor = System.Drawing.Color.White;
+            this.labelFechaFin.Location = new System.Drawing.Point(721, 36);
             this.labelFechaFin.Name = "labelFechaFin";
             this.labelFechaFin.Size = new System.Drawing.Size(76, 19);
             this.labelFechaFin.TabIndex = 81;
@@ -169,7 +170,7 @@
             this.dateTimePickerFechaInicio.CustomFormat = "";
             this.dateTimePickerFechaInicio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerFechaInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerFechaInicio.Location = new System.Drawing.Point(729, 33);
+            this.dateTimePickerFechaInicio.Location = new System.Drawing.Point(615, 33);
             this.dateTimePickerFechaInicio.Name = "dateTimePickerFechaInicio";
             this.dateTimePickerFechaInicio.Size = new System.Drawing.Size(100, 27);
             this.dateTimePickerFechaInicio.TabIndex = 1;
@@ -179,13 +180,13 @@
             // 
             this.buttonBuscar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBuscar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.buttonBuscar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonBuscar1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBuscar1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBuscar1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBuscar1.ForeColor = System.Drawing.SystemColors.Window;
             this.buttonBuscar1.Image = global::CapaPresentacion.Properties.Resources.Lupa;
-            this.buttonBuscar1.Location = new System.Drawing.Point(1301, 30);
+            this.buttonBuscar1.Location = new System.Drawing.Point(1187, 30);
             this.buttonBuscar1.Name = "buttonBuscar1";
             this.buttonBuscar1.Size = new System.Drawing.Size(75, 30);
             this.buttonBuscar1.TabIndex = 4;
@@ -198,10 +199,10 @@
             this.labelFechaInicio.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelFechaInicio.AutoSize = true;
-            this.labelFechaInicio.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelFechaInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelFechaInicio.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFechaInicio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.labelFechaInicio.Location = new System.Drawing.Point(633, 36);
+            this.labelFechaInicio.ForeColor = System.Drawing.Color.White;
+            this.labelFechaInicio.Location = new System.Drawing.Point(519, 36);
             this.labelFechaInicio.Name = "labelFechaInicio";
             this.labelFechaInicio.Size = new System.Drawing.Size(90, 19);
             this.labelFechaInicio.TabIndex = 79;
@@ -211,7 +212,7 @@
             // 
             this.panelReporteCompras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelReporteCompras.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelReporteCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelReporteCompras.Controls.Add(this.buttonLimpiarClientes);
             this.panelReporteCompras.Controls.Add(this.comboBoxCliente);
             this.panelReporteCompras.Controls.Add(this.labelTitulo);
@@ -223,7 +224,7 @@
             this.panelReporteCompras.Controls.Add(this.labelFechaInicio);
             this.panelReporteCompras.Location = new System.Drawing.Point(12, 12);
             this.panelReporteCompras.Name = "panelReporteCompras";
-            this.panelReporteCompras.Size = new System.Drawing.Size(1460, 80);
+            this.panelReporteCompras.Size = new System.Drawing.Size(1346, 80);
             this.panelReporteCompras.TabIndex = 93;
             // 
             // labelBuscarPor
@@ -259,8 +260,28 @@
             this.panel1.Controls.Add(this.textBoxBusqueda);
             this.panel1.Location = new System.Drawing.Point(12, 98);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1460, 86);
+            this.panel1.Size = new System.Drawing.Size(1346, 86);
             this.panel1.TabIndex = 94;
+            // 
+            // buttonLimpiar3
+            // 
+            this.buttonLimpiar3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLimpiar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.buttonLimpiar3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLimpiar3.FlatAppearance.BorderSize = 0;
+            this.buttonLimpiar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLimpiar3.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLimpiar3.ForeColor = System.Drawing.SystemColors.Window;
+            this.buttonLimpiar3.Image = global::CapaPresentacion.Properties.Resources.Escoba;
+            this.buttonLimpiar3.Location = new System.Drawing.Point(1268, 43);
+            this.buttonLimpiar3.Name = "buttonLimpiar3";
+            this.buttonLimpiar3.Size = new System.Drawing.Size(75, 30);
+            this.buttonLimpiar3.TabIndex = 102;
+            this.buttonLimpiar3.Text = "Limpiar";
+            this.buttonLimpiar3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonLimpiar3.UseVisualStyleBackColor = false;
+            this.buttonLimpiar3.Click += new System.EventHandler(this.buttonLimpiar3_Click);
             // 
             // label1
             // 
@@ -270,7 +291,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.label1.Location = new System.Drawing.Point(891, 45);
+            this.label1.Location = new System.Drawing.Point(777, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 19);
             this.label1.TabIndex = 99;
@@ -283,7 +304,7 @@
             this.comboBoxColumna.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxColumna.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxColumna.FormattingEnabled = true;
-            this.comboBoxColumna.Location = new System.Drawing.Point(962, 43);
+            this.comboBoxColumna.Location = new System.Drawing.Point(848, 43);
             this.comboBoxColumna.Name = "comboBoxColumna";
             this.comboBoxColumna.Size = new System.Drawing.Size(115, 27);
             this.comboBoxColumna.TabIndex = 98;
@@ -301,7 +322,7 @@
             this.button3.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Window;
             this.button3.Image = global::CapaPresentacion.Properties.Resources.Filtro;
-            this.button3.Location = new System.Drawing.Point(1301, 43);
+            this.button3.Location = new System.Drawing.Point(1187, 43);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 29);
             this.button3.TabIndex = 97;
@@ -317,7 +338,7 @@
             this.comboBoxMonto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMonto.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxMonto.FormattingEnabled = true;
-            this.comboBoxMonto.Location = new System.Drawing.Point(1083, 43);
+            this.comboBoxMonto.Location = new System.Drawing.Point(969, 43);
             this.comboBoxMonto.Name = "comboBoxMonto";
             this.comboBoxMonto.Size = new System.Drawing.Size(107, 27);
             this.comboBoxMonto.TabIndex = 95;
@@ -331,7 +352,7 @@
             this.textBoxMonto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxMonto.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMonto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.textBoxMonto.Location = new System.Drawing.Point(1196, 43);
+            this.textBoxMonto.Location = new System.Drawing.Point(1082, 43);
             this.textBoxMonto.Name = "textBoxMonto";
             this.textBoxMonto.Size = new System.Drawing.Size(99, 27);
             this.textBoxMonto.TabIndex = 96;
@@ -368,7 +389,7 @@
             // 
             this.buttonBuscar2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonBuscar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.buttonBuscar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonBuscar2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBuscar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBuscar2.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -425,7 +446,7 @@
             this.buttonDescarcarExcel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDescarcarExcel.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDescarcarExcel.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonDescarcarExcel.Location = new System.Drawing.Point(1322, 619);
+            this.buttonDescarcarExcel.Location = new System.Drawing.Point(1208, 619);
             this.buttonDescarcarExcel.Name = "buttonDescarcarExcel";
             this.buttonDescarcarExcel.Size = new System.Drawing.Size(150, 30);
             this.buttonDescarcarExcel.TabIndex = 10;
@@ -476,24 +497,8 @@
             this.dataGridViewData.Location = new System.Drawing.Point(12, 190);
             this.dataGridViewData.Name = "dataGridViewData";
             this.dataGridViewData.ReadOnly = true;
-            this.dataGridViewData.Size = new System.Drawing.Size(1460, 423);
+            this.dataGridViewData.Size = new System.Drawing.Size(1346, 423);
             this.dataGridViewData.TabIndex = 96;
-            // 
-            // buttonGrafico
-            // 
-            this.buttonGrafico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonGrafico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(169)))), ((int)(((byte)(255)))));
-            this.buttonGrafico.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(169)))), ((int)(((byte)(255)))));
-            this.buttonGrafico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGrafico.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGrafico.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonGrafico.Location = new System.Drawing.Point(1241, 619);
-            this.buttonGrafico.Name = "buttonGrafico";
-            this.buttonGrafico.Size = new System.Drawing.Size(75, 30);
-            this.buttonGrafico.TabIndex = 97;
-            this.buttonGrafico.Text = "Gráfico";
-            this.buttonGrafico.UseVisualStyleBackColor = false;
-            this.buttonGrafico.Click += new System.EventHandler(this.buttonGrafico_Click);
             // 
             // FechaRegistro
             // 
@@ -589,31 +594,27 @@
             this.MontoTotal.Name = "MontoTotal";
             this.MontoTotal.ReadOnly = true;
             // 
-            // buttonLimpiar3
+            // buttonGrafico
             // 
-            this.buttonLimpiar3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLimpiar3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.buttonLimpiar3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLimpiar3.FlatAppearance.BorderSize = 0;
-            this.buttonLimpiar3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLimpiar3.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLimpiar3.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonLimpiar3.Image = global::CapaPresentacion.Properties.Resources.Escoba;
-            this.buttonLimpiar3.Location = new System.Drawing.Point(1382, 43);
-            this.buttonLimpiar3.Name = "buttonLimpiar3";
-            this.buttonLimpiar3.Size = new System.Drawing.Size(75, 30);
-            this.buttonLimpiar3.TabIndex = 102;
-            this.buttonLimpiar3.Text = "Limpiar";
-            this.buttonLimpiar3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonLimpiar3.UseVisualStyleBackColor = false;
-            this.buttonLimpiar3.Click += new System.EventHandler(this.buttonLimpiar3_Click);
+            this.buttonGrafico.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonGrafico.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(169)))), ((int)(((byte)(255)))));
+            this.buttonGrafico.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(169)))), ((int)(((byte)(255)))));
+            this.buttonGrafico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGrafico.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGrafico.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonGrafico.Location = new System.Drawing.Point(1127, 619);
+            this.buttonGrafico.Name = "buttonGrafico";
+            this.buttonGrafico.Size = new System.Drawing.Size(75, 30);
+            this.buttonGrafico.TabIndex = 97;
+            this.buttonGrafico.Text = "Gráfico";
+            this.buttonGrafico.UseVisualStyleBackColor = false;
+            this.buttonGrafico.Click += new System.EventHandler(this.buttonGrafico_Click);
             // 
             // frmReporteVentas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 661);
+            this.ClientSize = new System.Drawing.Size(1370, 661);
             this.Controls.Add(this.buttonGrafico);
             this.Controls.Add(this.dataGridViewData);
             this.Controls.Add(this.panelReporteCompras);
