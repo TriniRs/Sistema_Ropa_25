@@ -82,6 +82,7 @@
             // 
             // textBoxClave
             // 
+            this.textBoxClave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textBoxClave.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxClave.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxClave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
@@ -94,7 +95,7 @@
             // 
             // labelLineContrasena
             // 
-            this.labelLineContrasena.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.labelLineContrasena.BackColor = System.Drawing.Color.White;
             this.labelLineContrasena.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.labelLineContrasena.Location = new System.Drawing.Point(20, 262);
             this.labelLineContrasena.Name = "labelLineContrasena";
@@ -115,6 +116,7 @@
             // 
             // textBoxDocumento
             // 
+            this.textBoxDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.textBoxDocumento.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxDocumento.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
@@ -127,8 +129,8 @@
             // 
             // labelLineDocumento
             // 
-            this.labelLineDocumento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.labelLineDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.labelLineDocumento.BackColor = System.Drawing.Color.White;
+            this.labelLineDocumento.ForeColor = System.Drawing.Color.White;
             this.labelLineDocumento.Location = new System.Drawing.Point(20, 190);
             this.labelLineDocumento.Name = "labelLineDocumento";
             this.labelLineDocumento.Size = new System.Drawing.Size(250, 1);

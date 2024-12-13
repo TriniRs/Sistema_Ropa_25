@@ -37,16 +37,6 @@
             this.menuAgregarOrdenCompra = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEliminarOrdenCompra = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.textBoxId = new System.Windows.Forms.TextBox();
-            this.panelLista = new System.Windows.Forms.Panel();
-            this.buttonActualizar = new System.Windows.Forms.Button();
-            this.labelSubTitulo = new System.Windows.Forms.Label();
-            this.comboBoxBusqueda = new System.Windows.Forms.ComboBox();
-            this.labelBuscarPor = new System.Windows.Forms.Label();
-            this.buttonLimpiar = new System.Windows.Forms.Button();
-            this.textBoxBusqueda = new System.Windows.Forms.TextBox();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.textBoxNumeroDocumento = new System.Windows.Forms.TextBox();
             this.buttonSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.idCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +48,16 @@
             this.numeroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montoTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBoxId = new System.Windows.Forms.TextBox();
+            this.panelLista = new System.Windows.Forms.Panel();
+            this.buttonActualizar = new System.Windows.Forms.Button();
+            this.labelSubTitulo = new System.Windows.Forms.Label();
+            this.comboBoxBusqueda = new System.Windows.Forms.ComboBox();
+            this.labelBuscarPor = new System.Windows.Forms.Label();
+            this.buttonLimpiar = new System.Windows.Forms.Button();
+            this.textBoxBusqueda = new System.Windows.Forms.TextBox();
+            this.buttonBuscar = new System.Windows.Forms.Button();
+            this.textBoxNumeroDocumento = new System.Windows.Forms.TextBox();
             this.menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panelLista.SuspendLayout();
@@ -72,7 +72,7 @@
             this.menuEliminarOrdenCompra});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1484, 34);
+            this.menu.Size = new System.Drawing.Size(1370, 34);
             this.menu.TabIndex = 97;
             this.menu.Text = "menuStrip1";
             // 
@@ -162,157 +162,11 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView.RowTemplate.Height = 28;
-            this.dataGridView.Size = new System.Drawing.Size(1460, 526);
+            this.dataGridView.Size = new System.Drawing.Size(1346, 526);
             this.dataGridView.TabIndex = 99;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
             this.dataGridView.CellPainting += new System.Windows.Forms.DataGridViewCellPaintingEventHandler(this.dataGridView_CellPainting);
-            // 
-            // textBoxId
-            // 
-            this.textBoxId.Location = new System.Drawing.Point(1266, 11);
-            this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(100, 20);
-            this.textBoxId.TabIndex = 100;
-            this.textBoxId.Visible = false;
-            // 
-            // panelLista
-            // 
-            this.panelLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelLista.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panelLista.Controls.Add(this.buttonActualizar);
-            this.panelLista.Controls.Add(this.labelSubTitulo);
-            this.panelLista.Controls.Add(this.comboBoxBusqueda);
-            this.panelLista.Controls.Add(this.labelBuscarPor);
-            this.panelLista.Controls.Add(this.buttonLimpiar);
-            this.panelLista.Controls.Add(this.textBoxBusqueda);
-            this.panelLista.Controls.Add(this.buttonBuscar);
-            this.panelLista.Location = new System.Drawing.Point(12, 37);
-            this.panelLista.Name = "panelLista";
-            this.panelLista.Size = new System.Drawing.Size(1460, 80);
-            this.panelLista.TabIndex = 98;
-            // 
-            // buttonActualizar
-            // 
-            this.buttonActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonActualizar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonActualizar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonActualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonActualizar.Image = global::CapaPresentacion.Properties.Resources.Actualizar2;
-            this.buttonActualizar.Location = new System.Drawing.Point(1362, 30);
-            this.buttonActualizar.Name = "buttonActualizar";
-            this.buttonActualizar.Size = new System.Drawing.Size(95, 30);
-            this.buttonActualizar.TabIndex = 5;
-            this.buttonActualizar.Text = "Actualizar";
-            this.buttonActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonActualizar.UseVisualStyleBackColor = false;
-            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
-            // 
-            // labelSubTitulo
-            // 
-            this.labelSubTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelSubTitulo.AutoSize = true;
-            this.labelSubTitulo.BackColor = System.Drawing.SystemColors.Window;
-            this.labelSubTitulo.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSubTitulo.Location = new System.Drawing.Point(10, 20);
-            this.labelSubTitulo.Name = "labelSubTitulo";
-            this.labelSubTitulo.Size = new System.Drawing.Size(198, 39);
-            this.labelSubTitulo.TabIndex = 50;
-            this.labelSubTitulo.Text = "Lista de compras";
-            // 
-            // comboBoxBusqueda
-            // 
-            this.comboBoxBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBoxBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxBusqueda.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxBusqueda.FormattingEnabled = true;
-            this.comboBoxBusqueda.ItemHeight = 19;
-            this.comboBoxBusqueda.Location = new System.Drawing.Point(839, 32);
-            this.comboBoxBusqueda.Name = "comboBoxBusqueda";
-            this.comboBoxBusqueda.Size = new System.Drawing.Size(174, 27);
-            this.comboBoxBusqueda.TabIndex = 1;
-            this.comboBoxBusqueda.SelectedIndexChanged += new System.EventHandler(this.comboBoxBusqueda_SelectedIndexChanged);
-            // 
-            // labelBuscarPor
-            // 
-            this.labelBuscarPor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelBuscarPor.AutoSize = true;
-            this.labelBuscarPor.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelBuscarPor.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscarPor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.labelBuscarPor.Location = new System.Drawing.Point(764, 36);
-            this.labelBuscarPor.Name = "labelBuscarPor";
-            this.labelBuscarPor.Size = new System.Drawing.Size(69, 19);
-            this.labelBuscarPor.TabIndex = 41;
-            this.labelBuscarPor.Text = "Buscar por:";
-            // 
-            // buttonLimpiar
-            // 
-            this.buttonLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.buttonLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLimpiar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonLimpiar.Image = global::CapaPresentacion.Properties.Resources.Escoba;
-            this.buttonLimpiar.Location = new System.Drawing.Point(1281, 30);
-            this.buttonLimpiar.Name = "buttonLimpiar";
-            this.buttonLimpiar.Size = new System.Drawing.Size(75, 30);
-            this.buttonLimpiar.TabIndex = 4;
-            this.buttonLimpiar.Text = "Limpiar";
-            this.buttonLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonLimpiar.UseVisualStyleBackColor = false;
-            this.buttonLimpiar.Click += new System.EventHandler(this.buttonLimpiar_Click);
-            // 
-            // textBoxBusqueda
-            // 
-            this.textBoxBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxBusqueda.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxBusqueda.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.textBoxBusqueda.Location = new System.Drawing.Point(1019, 32);
-            this.textBoxBusqueda.Name = "textBoxBusqueda";
-            this.textBoxBusqueda.Size = new System.Drawing.Size(175, 27);
-            this.textBoxBusqueda.TabIndex = 2;
-            this.textBoxBusqueda.TextChanged += new System.EventHandler(this.textBoxBusqueda_TextChanged);
-            // 
-            // buttonBuscar
-            // 
-            this.buttonBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.buttonBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonBuscar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonBuscar.Image = global::CapaPresentacion.Properties.Resources.Lupa;
-            this.buttonBuscar.Location = new System.Drawing.Point(1200, 30);
-            this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(75, 30);
-            this.buttonBuscar.TabIndex = 3;
-            this.buttonBuscar.Text = "Buscar";
-            this.buttonBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonBuscar.UseVisualStyleBackColor = false;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
-            // 
-            // textBoxNumeroDocumento
-            // 
-            this.textBoxNumeroDocumento.Location = new System.Drawing.Point(1372, 11);
-            this.textBoxNumeroDocumento.Name = "textBoxNumeroDocumento";
-            this.textBoxNumeroDocumento.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNumeroDocumento.TabIndex = 101;
-            this.textBoxNumeroDocumento.Visible = false;
             // 
             // buttonSeleccionar
             // 
@@ -391,11 +245,157 @@
             this.fechaRegistro.ReadOnly = true;
             this.fechaRegistro.Width = 150;
             // 
+            // textBoxId
+            // 
+            this.textBoxId.Location = new System.Drawing.Point(1266, 11);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(100, 20);
+            this.textBoxId.TabIndex = 100;
+            this.textBoxId.Visible = false;
+            // 
+            // panelLista
+            // 
+            this.panelLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelLista.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelLista.Controls.Add(this.buttonActualizar);
+            this.panelLista.Controls.Add(this.labelSubTitulo);
+            this.panelLista.Controls.Add(this.comboBoxBusqueda);
+            this.panelLista.Controls.Add(this.labelBuscarPor);
+            this.panelLista.Controls.Add(this.buttonLimpiar);
+            this.panelLista.Controls.Add(this.textBoxBusqueda);
+            this.panelLista.Controls.Add(this.buttonBuscar);
+            this.panelLista.Location = new System.Drawing.Point(12, 37);
+            this.panelLista.Name = "panelLista";
+            this.panelLista.Size = new System.Drawing.Size(1346, 80);
+            this.panelLista.TabIndex = 98;
+            // 
+            // buttonActualizar
+            // 
+            this.buttonActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonActualizar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonActualizar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonActualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonActualizar.Image = global::CapaPresentacion.Properties.Resources.Actualizar2;
+            this.buttonActualizar.Location = new System.Drawing.Point(1248, 30);
+            this.buttonActualizar.Name = "buttonActualizar";
+            this.buttonActualizar.Size = new System.Drawing.Size(95, 30);
+            this.buttonActualizar.TabIndex = 5;
+            this.buttonActualizar.Text = "Actualizar";
+            this.buttonActualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonActualizar.UseVisualStyleBackColor = false;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
+            // 
+            // labelSubTitulo
+            // 
+            this.labelSubTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelSubTitulo.AutoSize = true;
+            this.labelSubTitulo.BackColor = System.Drawing.SystemColors.Window;
+            this.labelSubTitulo.Font = new System.Drawing.Font("Bahnschrift Condensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSubTitulo.Location = new System.Drawing.Point(10, 20);
+            this.labelSubTitulo.Name = "labelSubTitulo";
+            this.labelSubTitulo.Size = new System.Drawing.Size(198, 39);
+            this.labelSubTitulo.TabIndex = 50;
+            this.labelSubTitulo.Text = "Lista de compras";
+            // 
+            // comboBoxBusqueda
+            // 
+            this.comboBoxBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxBusqueda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxBusqueda.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxBusqueda.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBusqueda.FormattingEnabled = true;
+            this.comboBoxBusqueda.ItemHeight = 19;
+            this.comboBoxBusqueda.Location = new System.Drawing.Point(725, 32);
+            this.comboBoxBusqueda.Name = "comboBoxBusqueda";
+            this.comboBoxBusqueda.Size = new System.Drawing.Size(174, 27);
+            this.comboBoxBusqueda.TabIndex = 1;
+            this.comboBoxBusqueda.SelectedIndexChanged += new System.EventHandler(this.comboBoxBusqueda_SelectedIndexChanged);
+            // 
+            // labelBuscarPor
+            // 
+            this.labelBuscarPor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelBuscarPor.AutoSize = true;
+            this.labelBuscarPor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelBuscarPor.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBuscarPor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.labelBuscarPor.Location = new System.Drawing.Point(650, 36);
+            this.labelBuscarPor.Name = "labelBuscarPor";
+            this.labelBuscarPor.Size = new System.Drawing.Size(69, 19);
+            this.labelBuscarPor.TabIndex = 41;
+            this.labelBuscarPor.Text = "Buscar por:";
+            // 
+            // buttonLimpiar
+            // 
+            this.buttonLimpiar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLimpiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.buttonLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLimpiar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonLimpiar.Image = global::CapaPresentacion.Properties.Resources.Escoba;
+            this.buttonLimpiar.Location = new System.Drawing.Point(1167, 30);
+            this.buttonLimpiar.Name = "buttonLimpiar";
+            this.buttonLimpiar.Size = new System.Drawing.Size(75, 30);
+            this.buttonLimpiar.TabIndex = 4;
+            this.buttonLimpiar.Text = "Limpiar";
+            this.buttonLimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonLimpiar.UseVisualStyleBackColor = false;
+            this.buttonLimpiar.Click += new System.EventHandler(this.buttonLimpiar_Click);
+            // 
+            // textBoxBusqueda
+            // 
+            this.textBoxBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxBusqueda.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.textBoxBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxBusqueda.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.textBoxBusqueda.Location = new System.Drawing.Point(905, 32);
+            this.textBoxBusqueda.Name = "textBoxBusqueda";
+            this.textBoxBusqueda.Size = new System.Drawing.Size(175, 27);
+            this.textBoxBusqueda.TabIndex = 2;
+            this.textBoxBusqueda.TextChanged += new System.EventHandler(this.textBoxBusqueda_TextChanged);
+            // 
+            // buttonBuscar
+            // 
+            this.buttonBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.buttonBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonBuscar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonBuscar.Image = global::CapaPresentacion.Properties.Resources.Lupa;
+            this.buttonBuscar.Location = new System.Drawing.Point(1086, 30);
+            this.buttonBuscar.Name = "buttonBuscar";
+            this.buttonBuscar.Size = new System.Drawing.Size(75, 30);
+            this.buttonBuscar.TabIndex = 3;
+            this.buttonBuscar.Text = "Buscar";
+            this.buttonBuscar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonBuscar.UseVisualStyleBackColor = false;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
+            // 
+            // textBoxNumeroDocumento
+            // 
+            this.textBoxNumeroDocumento.Location = new System.Drawing.Point(1372, 11);
+            this.textBoxNumeroDocumento.Name = "textBoxNumeroDocumento";
+            this.textBoxNumeroDocumento.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumeroDocumento.TabIndex = 101;
+            this.textBoxNumeroDocumento.Visible = false;
+            // 
             // frmCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 661);
+            this.ClientSize = new System.Drawing.Size(1370, 661);
             this.Controls.Add(this.textBoxNumeroDocumento);
             this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.menu);

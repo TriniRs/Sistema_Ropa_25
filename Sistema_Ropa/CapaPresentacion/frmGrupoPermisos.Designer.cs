@@ -81,7 +81,7 @@
             this.panelLista.Controls.Add(this.buttonBuscar);
             this.panelLista.Location = new System.Drawing.Point(12, 37);
             this.panelLista.Name = "panelLista";
-            this.panelLista.Size = new System.Drawing.Size(1460, 80);
+            this.panelLista.Size = new System.Drawing.Size(1346, 80);
             this.panelLista.TabIndex = 98;
             // 
             // buttonActualizar
@@ -94,7 +94,7 @@
             this.buttonActualizar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonActualizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonActualizar.Image = global::CapaPresentacion.Properties.Resources.Actualizar2;
-            this.buttonActualizar.Location = new System.Drawing.Point(1362, 30);
+            this.buttonActualizar.Location = new System.Drawing.Point(1248, 30);
             this.buttonActualizar.Name = "buttonActualizar";
             this.buttonActualizar.Size = new System.Drawing.Size(95, 30);
             this.buttonActualizar.TabIndex = 5;
@@ -125,7 +125,7 @@
             this.comboBoxBusqueda.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxBusqueda.FormattingEnabled = true;
             this.comboBoxBusqueda.ItemHeight = 19;
-            this.comboBoxBusqueda.Location = new System.Drawing.Point(839, 32);
+            this.comboBoxBusqueda.Location = new System.Drawing.Point(725, 32);
             this.comboBoxBusqueda.Name = "comboBoxBusqueda";
             this.comboBoxBusqueda.Size = new System.Drawing.Size(174, 27);
             this.comboBoxBusqueda.TabIndex = 1;
@@ -139,7 +139,7 @@
             this.labelBuscarPor.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.labelBuscarPor.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBuscarPor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.labelBuscarPor.Location = new System.Drawing.Point(764, 36);
+            this.labelBuscarPor.Location = new System.Drawing.Point(650, 36);
             this.labelBuscarPor.Name = "labelBuscarPor";
             this.labelBuscarPor.Size = new System.Drawing.Size(69, 19);
             this.labelBuscarPor.TabIndex = 41;
@@ -155,7 +155,7 @@
             this.buttonLimpiar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonLimpiar.Image = global::CapaPresentacion.Properties.Resources.Escoba;
-            this.buttonLimpiar.Location = new System.Drawing.Point(1281, 30);
+            this.buttonLimpiar.Location = new System.Drawing.Point(1167, 30);
             this.buttonLimpiar.Name = "buttonLimpiar";
             this.buttonLimpiar.Size = new System.Drawing.Size(75, 30);
             this.buttonLimpiar.TabIndex = 4;
@@ -172,7 +172,7 @@
             this.textBoxBusqueda.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxBusqueda.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBusqueda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.textBoxBusqueda.Location = new System.Drawing.Point(1019, 32);
+            this.textBoxBusqueda.Location = new System.Drawing.Point(905, 32);
             this.textBoxBusqueda.Name = "textBoxBusqueda";
             this.textBoxBusqueda.Size = new System.Drawing.Size(175, 27);
             this.textBoxBusqueda.TabIndex = 2;
@@ -188,7 +188,7 @@
             this.buttonBuscar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonBuscar.Image = global::CapaPresentacion.Properties.Resources.Lupa;
-            this.buttonBuscar.Location = new System.Drawing.Point(1200, 30);
+            this.buttonBuscar.Location = new System.Drawing.Point(1086, 30);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(75, 30);
             this.buttonBuscar.TabIndex = 3;
@@ -274,7 +274,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView.RowTemplate.Height = 28;
-            this.dataGridView.Size = new System.Drawing.Size(1460, 526);
+            this.dataGridView.Size = new System.Drawing.Size(1346, 526);
             this.dataGridView.TabIndex = 99;
             this.dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             this.dataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellDoubleClick);
@@ -331,7 +331,7 @@
             this.menuEliminarGrupoPermisos});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(1484, 34);
+            this.menu.Size = new System.Drawing.Size(1370, 34);
             this.menu.TabIndex = 97;
             this.menu.Text = "menuStrip1";
             // 
@@ -363,7 +363,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1484, 661);
+            this.ClientSize = new System.Drawing.Size(1370, 661);
             this.Controls.Add(this.textBoxIdComponente);
             this.Controls.Add(this.panelLista);
             this.Controls.Add(this.textBoxId);
@@ -371,7 +371,7 @@
             this.Controls.Add(this.menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGrupoPermisos";
-            this.Text = "Grupo de permisos";
+            this.Text = " n";
             this.Load += new System.EventHandler(this.frmGrupo_Load);
             this.panelLista.ResumeLayout(false);
             this.panelLista.PerformLayout();

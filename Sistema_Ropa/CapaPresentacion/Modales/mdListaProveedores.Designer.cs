@@ -51,7 +51,7 @@
             // 
             // panelProveedor
             // 
-            this.panelProveedor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelProveedor.Controls.Add(this.buttonAgregarProveedor);
             this.panelProveedor.Controls.Add(this.labelTitulo);
             this.panelProveedor.Controls.Add(this.buttonLimpiarBuscardor);
@@ -67,11 +67,11 @@
             // buttonAgregarProveedor
             // 
             this.buttonAgregarProveedor.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonAgregarProveedor.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonAgregarProveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonAgregarProveedor.FlatAppearance.BorderSize = 0;
             this.buttonAgregarProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAgregarProveedor.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAgregarProveedor.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonAgregarProveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.buttonAgregarProveedor.Image = global::CapaPresentacion.Properties.Resources.AgregarCliente_Proveedor1;
             this.buttonAgregarProveedor.Location = new System.Drawing.Point(397, 15);
             this.buttonAgregarProveedor.Name = "buttonAgregarProveedor";
@@ -86,6 +86,7 @@
             // 
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.Font = new System.Drawing.Font("Bahnschrift Condensed", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitulo.ForeColor = System.Drawing.Color.White;
             this.labelTitulo.Location = new System.Drawing.Point(13, 10);
             this.labelTitulo.Name = "labelTitulo";
             this.labelTitulo.Size = new System.Drawing.Size(205, 33);
@@ -137,9 +138,9 @@
             // labelBuscarPor
             // 
             this.labelBuscarPor.AutoSize = true;
-            this.labelBuscarPor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelBuscarPor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelBuscarPor.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscarPor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.labelBuscarPor.ForeColor = System.Drawing.Color.White;
             this.labelBuscarPor.Location = new System.Drawing.Point(15, 53);
             this.labelBuscarPor.Name = "labelBuscarPor";
             this.labelBuscarPor.Size = new System.Drawing.Size(69, 19);

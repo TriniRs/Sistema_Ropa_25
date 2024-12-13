@@ -35,6 +35,16 @@
             this.labelTitulo = new System.Windows.Forms.Label();
             this.contenedor = new System.Windows.Forms.Panel();
             this.menu = new System.Windows.Forms.MenuStrip();
+            this.menuSeguridad = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPermisos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPermisosSimples = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGruposPermisos = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPermisosUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAuditorias = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAuditoriaSesiones = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAuditoriaCompras = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAuditoriaVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPedidosVentas = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,16 +56,6 @@
             this.menuReportes = new System.Windows.Forms.ToolStripMenuItem();
             this.menuReportesCompras = new System.Windows.Forms.ToolStripMenuItem();
             this.menuReportesVentas = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuSeguridad = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuPermisos = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuPermisosSimples = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuGruposPermisos = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuPermisosUsuarios = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAuditorias = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAuditoriaSesiones = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAuditoriaCompras = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAuditoriaVentas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConfiguracion = new System.Windows.Forms.ToolStripMenuItem();
             this.menuDatosNegocio = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTitulo = new System.Windows.Forms.MenuStrip();
@@ -86,7 +86,7 @@
             this.labelUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.labelUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsuario.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelUsuario.Location = new System.Drawing.Point(1173, 26);
+            this.labelUsuario.Location = new System.Drawing.Point(1182, 26);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(77, 19);
             this.labelUsuario.TabIndex = 90;
@@ -100,24 +100,23 @@
             this.labelUsuarioTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
             this.labelUsuarioTitulo.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsuarioTitulo.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelUsuarioTitulo.Location = new System.Drawing.Point(1143, 26);
+            this.labelUsuarioTitulo.Location = new System.Drawing.Point(1134, 26);
             this.labelUsuarioTitulo.Name = "labelUsuarioTitulo";
-            this.labelUsuarioTitulo.Size = new System.Drawing.Size(33, 19);
+            this.labelUsuarioTitulo.Size = new System.Drawing.Size(53, 19);
             this.labelUsuarioTitulo.TabIndex = 89;
-            this.labelUsuarioTitulo.Text = "Hola";
+            this.labelUsuarioTitulo.Text = "Usuario:";
             // 
             // labelTitulo
             // 
             this.labelTitulo.AutoSize = true;
             this.labelTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
-            this.labelTitulo.Font = new System.Drawing.Font("Bad Script", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.labelTitulo.Location = new System.Drawing.Point(12, 6);
+            this.labelTitulo.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitulo.ForeColor = System.Drawing.SystemColors.Window;
+            this.labelTitulo.Location = new System.Drawing.Point(15, 15);
             this.labelTitulo.Name = "labelTitulo";
-            this.labelTitulo.Size = new System.Drawing.Size(204, 53);
+            this.labelTitulo.Size = new System.Drawing.Size(164, 33);
             this.labelTitulo.TabIndex = 88;
-            this.labelTitulo.Text = "Sistema de Ropa";
-            this.labelTitulo.Click += new System.EventHandler(this.labelTitulo_Click);
+            this.labelTitulo.Text = "Servicio De Color";
             // 
             // contenedor
             // 
@@ -130,12 +129,12 @@
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.menu.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuSeguridad,
             this.menuVentas,
             this.menuCompras,
             this.menuReportes,
-            this.menuSeguridad,
             this.menuConfiguracion});
             this.menu.Location = new System.Drawing.Point(0, 60);
             this.menu.Name = "menu";
@@ -143,107 +142,10 @@
             this.menu.TabIndex = 86;
             this.menu.Text = "menuStrip1";
             // 
-            // menuVentas
-            // 
-            this.menuVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.menuVentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuClientes,
-            this.menuPedidosVentas});
-            this.menuVentas.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuVentas.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.menuVentas.Name = "menuVentas";
-            this.menuVentas.Size = new System.Drawing.Size(63, 30);
-            this.menuVentas.Text = "Ventas";
-            this.menuVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuClientes
-            // 
-            this.menuClientes.Name = "menuClientes";
-            this.menuClientes.Size = new System.Drawing.Size(193, 28);
-            this.menuClientes.Text = "Clientes";
-            this.menuClientes.Click += new System.EventHandler(this.menuClientes_Click);
-            // 
-            // menuPedidosVentas
-            // 
-            this.menuPedidosVentas.Name = "menuPedidosVentas";
-            this.menuPedidosVentas.Size = new System.Drawing.Size(193, 28);
-            this.menuPedidosVentas.Text = "Pedidos de ventas";
-            this.menuPedidosVentas.Click += new System.EventHandler(this.pedidosDeVentasToolStripMenuItem_Click);
-            // 
-            // menuCompras
-            // 
-            this.menuCompras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.menuCompras.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuCategorias,
-            this.menuProductos,
-            this.menuProveedores,
-            this.menuOrdenesCompras});
-            this.menuCompras.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuCompras.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.menuCompras.Name = "menuCompras";
-            this.menuCompras.Size = new System.Drawing.Size(78, 30);
-            this.menuCompras.Text = "Compras";
-            this.menuCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuCategorias
-            // 
-            this.menuCategorias.Name = "menuCategorias";
-            this.menuCategorias.Size = new System.Drawing.Size(210, 28);
-            this.menuCategorias.Text = "Categorías";
-            this.menuCategorias.Click += new System.EventHandler(this.menuCategorias_Click);
-            // 
-            // menuProductos
-            // 
-            this.menuProductos.Name = "menuProductos";
-            this.menuProductos.Size = new System.Drawing.Size(210, 28);
-            this.menuProductos.Text = "Productos";
-            this.menuProductos.Click += new System.EventHandler(this.menuProductos_Click);
-            // 
-            // menuProveedores
-            // 
-            this.menuProveedores.Name = "menuProveedores";
-            this.menuProveedores.Size = new System.Drawing.Size(210, 28);
-            this.menuProveedores.Text = "Proveedores";
-            this.menuProveedores.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
-            // 
-            // menuOrdenesCompras
-            // 
-            this.menuOrdenesCompras.Name = "menuOrdenesCompras";
-            this.menuOrdenesCompras.Size = new System.Drawing.Size(210, 28);
-            this.menuOrdenesCompras.Text = "Órdenes de compras";
-            this.menuOrdenesCompras.Click += new System.EventHandler(this.ordenesDeComprasToolStripMenuItem_Click);
-            // 
-            // menuReportes
-            // 
-            this.menuReportes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.menuReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuReportesCompras,
-            this.menuReportesVentas});
-            this.menuReportes.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuReportes.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.menuReportes.Name = "menuReportes";
-            this.menuReportes.Size = new System.Drawing.Size(78, 30);
-            this.menuReportes.Text = "Reportes";
-            this.menuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // menuReportesCompras
-            // 
-            this.menuReportesCompras.Name = "menuReportesCompras";
-            this.menuReportesCompras.Size = new System.Drawing.Size(214, 28);
-            this.menuReportesCompras.Text = "Reportes de compras";
-            this.menuReportesCompras.Click += new System.EventHandler(this.menuReportesCompras_Click);
-            // 
-            // menuReportesVentas
-            // 
-            this.menuReportesVentas.Name = "menuReportesVentas";
-            this.menuReportesVentas.Size = new System.Drawing.Size(214, 28);
-            this.menuReportesVentas.Text = "Reportes de ventas";
-            this.menuReportesVentas.Click += new System.EventHandler(this.menuReportesVentas_Click);
-            // 
             // menuSeguridad
             // 
             this.menuSeguridad.AutoSize = false;
-            this.menuSeguridad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.menuSeguridad.BackColor = System.Drawing.SystemColors.Window;
             this.menuSeguridad.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuUsuarios,
             this.menuPermisos,
@@ -324,9 +226,106 @@
             this.menuAuditoriaVentas.Text = "Auditoría ventas";
             this.menuAuditoriaVentas.Click += new System.EventHandler(this.auditoriaVentasToolStripMenuItem_Click);
             // 
+            // menuVentas
+            // 
+            this.menuVentas.BackColor = System.Drawing.SystemColors.Window;
+            this.menuVentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuClientes,
+            this.menuPedidosVentas});
+            this.menuVentas.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuVentas.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.menuVentas.Name = "menuVentas";
+            this.menuVentas.Size = new System.Drawing.Size(63, 30);
+            this.menuVentas.Text = "Ventas";
+            this.menuVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menuClientes
+            // 
+            this.menuClientes.Name = "menuClientes";
+            this.menuClientes.Size = new System.Drawing.Size(193, 28);
+            this.menuClientes.Text = "Clientes";
+            this.menuClientes.Click += new System.EventHandler(this.menuClientes_Click);
+            // 
+            // menuPedidosVentas
+            // 
+            this.menuPedidosVentas.Name = "menuPedidosVentas";
+            this.menuPedidosVentas.Size = new System.Drawing.Size(193, 28);
+            this.menuPedidosVentas.Text = "Pedidos de ventas";
+            this.menuPedidosVentas.Click += new System.EventHandler(this.pedidosDeVentasToolStripMenuItem_Click);
+            // 
+            // menuCompras
+            // 
+            this.menuCompras.BackColor = System.Drawing.SystemColors.Window;
+            this.menuCompras.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuCategorias,
+            this.menuProductos,
+            this.menuProveedores,
+            this.menuOrdenesCompras});
+            this.menuCompras.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCompras.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.menuCompras.Name = "menuCompras";
+            this.menuCompras.Size = new System.Drawing.Size(78, 30);
+            this.menuCompras.Text = "Compras";
+            this.menuCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menuCategorias
+            // 
+            this.menuCategorias.Name = "menuCategorias";
+            this.menuCategorias.Size = new System.Drawing.Size(210, 28);
+            this.menuCategorias.Text = "Categorías";
+            this.menuCategorias.Click += new System.EventHandler(this.menuCategorias_Click);
+            // 
+            // menuProductos
+            // 
+            this.menuProductos.Name = "menuProductos";
+            this.menuProductos.Size = new System.Drawing.Size(210, 28);
+            this.menuProductos.Text = "Productos";
+            this.menuProductos.Click += new System.EventHandler(this.menuProductos_Click);
+            // 
+            // menuProveedores
+            // 
+            this.menuProveedores.Name = "menuProveedores";
+            this.menuProveedores.Size = new System.Drawing.Size(210, 28);
+            this.menuProveedores.Text = "Proveedores";
+            this.menuProveedores.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
+            // 
+            // menuOrdenesCompras
+            // 
+            this.menuOrdenesCompras.Name = "menuOrdenesCompras";
+            this.menuOrdenesCompras.Size = new System.Drawing.Size(210, 28);
+            this.menuOrdenesCompras.Text = "Órdenes de compras";
+            this.menuOrdenesCompras.Click += new System.EventHandler(this.ordenesDeComprasToolStripMenuItem_Click);
+            // 
+            // menuReportes
+            // 
+            this.menuReportes.BackColor = System.Drawing.SystemColors.Window;
+            this.menuReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuReportesCompras,
+            this.menuReportesVentas});
+            this.menuReportes.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuReportes.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.menuReportes.Name = "menuReportes";
+            this.menuReportes.Size = new System.Drawing.Size(78, 30);
+            this.menuReportes.Text = "Reportes";
+            this.menuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // menuReportesCompras
+            // 
+            this.menuReportesCompras.Name = "menuReportesCompras";
+            this.menuReportesCompras.Size = new System.Drawing.Size(214, 28);
+            this.menuReportesCompras.Text = "Reportes de compras";
+            this.menuReportesCompras.Click += new System.EventHandler(this.menuReportesCompras_Click);
+            // 
+            // menuReportesVentas
+            // 
+            this.menuReportesVentas.Name = "menuReportesVentas";
+            this.menuReportesVentas.Size = new System.Drawing.Size(214, 28);
+            this.menuReportesVentas.Text = "Reportes de ventas";
+            this.menuReportesVentas.Click += new System.EventHandler(this.menuReportesVentas_Click);
+            // 
             // menuConfiguracion
             // 
-            this.menuConfiguracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.menuConfiguracion.BackColor = System.Drawing.SystemColors.Window;
             this.menuConfiguracion.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuDatosNegocio});
             this.menuConfiguracion.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -366,6 +365,7 @@
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.menu);
             this.Controls.Add(this.menuTitulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1300, 500);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

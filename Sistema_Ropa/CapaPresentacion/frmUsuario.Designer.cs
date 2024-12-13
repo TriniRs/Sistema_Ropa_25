@@ -33,11 +33,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUsuario));
             this.menu = new System.Windows.Forms.MenuStrip();
-            this.menuVerDetalleUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAgregarUsuario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEditarUsuario = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuRestablecerClave = new System.Windows.Forms.ToolStripMenuItem();
             this.menuEliminarUsuario = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuVerDetalleUsuario = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuRestablecerClave = new System.Windows.Forms.ToolStripMenuItem();
             this.panelLista = new System.Windows.Forms.Panel();
             this.buttonActualizar = new System.Windows.Forms.Button();
             this.labelSubTitulo = new System.Windows.Forms.Label();
@@ -77,18 +77,6 @@
             this.menu.TabIndex = 87;
             this.menu.Text = "menuStrip1";
             // 
-            // menuVerDetalleUsuario
-            // 
-            this.menuVerDetalleUsuario.AutoSize = false;
-            this.menuVerDetalleUsuario.BackColor = System.Drawing.Color.White;
-            this.menuVerDetalleUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuVerDetalleUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.menuVerDetalleUsuario.Name = "menuVerDetalleUsuario";
-            this.menuVerDetalleUsuario.Size = new System.Drawing.Size(88, 30);
-            this.menuVerDetalleUsuario.Text = "Ver detalle";
-            this.menuVerDetalleUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuVerDetalleUsuario.Click += new System.EventHandler(this.menuVerDetalleUsuario_Click);
-            // 
             // menuAgregarUsuario
             // 
             this.menuAgregarUsuario.AutoSize = false;
@@ -113,18 +101,6 @@
             this.menuEditarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuEditarUsuario.Click += new System.EventHandler(this.menuModificarUsuario_Click);
             // 
-            // menuRestablecerClave
-            // 
-            this.menuRestablecerClave.AutoSize = false;
-            this.menuRestablecerClave.BackColor = System.Drawing.Color.White;
-            this.menuRestablecerClave.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuRestablecerClave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.menuRestablecerClave.Name = "menuRestablecerClave";
-            this.menuRestablecerClave.Size = new System.Drawing.Size(134, 30);
-            this.menuRestablecerClave.Text = "Restablecer clave";
-            this.menuRestablecerClave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.menuRestablecerClave.Click += new System.EventHandler(this.menuRestablecerClave_Click);
-            // 
             // menuEliminarUsuario
             // 
             this.menuEliminarUsuario.AutoSize = false;
@@ -136,6 +112,30 @@
             this.menuEliminarUsuario.Text = "Eliminar";
             this.menuEliminarUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.menuEliminarUsuario.Click += new System.EventHandler(this.menuEliminarUsuario_Click);
+            // 
+            // menuVerDetalleUsuario
+            // 
+            this.menuVerDetalleUsuario.AutoSize = false;
+            this.menuVerDetalleUsuario.BackColor = System.Drawing.Color.White;
+            this.menuVerDetalleUsuario.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuVerDetalleUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.menuVerDetalleUsuario.Name = "menuVerDetalleUsuario";
+            this.menuVerDetalleUsuario.Size = new System.Drawing.Size(88, 30);
+            this.menuVerDetalleUsuario.Text = "Ver detalle";
+            this.menuVerDetalleUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuVerDetalleUsuario.Click += new System.EventHandler(this.menuVerDetalleUsuario_Click);
+            // 
+            // menuRestablecerClave
+            // 
+            this.menuRestablecerClave.AutoSize = false;
+            this.menuRestablecerClave.BackColor = System.Drawing.Color.White;
+            this.menuRestablecerClave.Font = new System.Drawing.Font("Bahnschrift Condensed", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuRestablecerClave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.menuRestablecerClave.Name = "menuRestablecerClave";
+            this.menuRestablecerClave.Size = new System.Drawing.Size(134, 30);
+            this.menuRestablecerClave.Text = "Restablecer clave";
+            this.menuRestablecerClave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.menuRestablecerClave.Click += new System.EventHandler(this.menuRestablecerClave_Click);
             // 
             // panelLista
             // 
@@ -207,9 +207,9 @@
             this.labelBuscarPor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelBuscarPor.AutoSize = true;
-            this.labelBuscarPor.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelBuscarPor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.labelBuscarPor.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscarPor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.labelBuscarPor.ForeColor = System.Drawing.Color.White;
             this.labelBuscarPor.Location = new System.Drawing.Point(650, 36);
             this.labelBuscarPor.Name = "labelBuscarPor";
             this.labelBuscarPor.Size = new System.Drawing.Size(69, 19);
@@ -253,7 +253,7 @@
             // 
             this.buttonBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.buttonBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBuscar.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

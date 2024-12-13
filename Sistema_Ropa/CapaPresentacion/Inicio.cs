@@ -306,10 +306,5 @@ namespace CapaPresentacion
             //    MessageBox.Show(mensaje, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //}
         }
-
-        private void labelTitulo_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
